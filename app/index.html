@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI: all 55 PS5 trophies, roadmap &amp; tracker</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <div>
+    <p class="kicker">Grand Theft Auto VI &middot; PlayStation 5 &middot; offline guide</p>
+    <h1>Leonida Trophy Guide</h1>
+    <p class="sub">All 55 trophies with their official names, descriptions and grades, a guide for each one with its sources, a roadmap to the platinum, and a tracker that saves in your browser.</p>
+  </div>
+  <div class="progress-card" id="progressCard">
+    <p class="big" id="progressText">0 / 55 earned</p>
+    <div class="bar"><div class="fill" id="progressFill" style="width:0%"></div></div>
+    <p class="small" id="progressDetail">Platinum 0/1 &middot; Gold 0/2 &middot; Silver 0/6 &middot; Bronze 0/46</p>
+    <p class="small" id="missableNote">&#9888; 1 possibly missable trophy: Positive Mental Attitude — do the Chapter 1 balcony meditation.</p>
+  </div>
+</header>
+
+<nav class="views" aria-label="Views">
+  <button type="button" id="viewChecklist" class="view-btn active">Checklist &amp; guides</button>
+  <button type="button" id="viewRoadmap" class="view-btn">Roadmap to the platinum</button>
+</nav>
+
+<section id="roadmapView" class="roadmap" hidden>
+  <h2>Roadmap to the platinum — Vice Got a Price!</h2>
+  <p>PowerPyx rates the platinum 4/10 difficulty and about 200 hours, one playthrough, with free roam after the story and no mission replay. There are no online trophies and no difficulty trophies. Do not use cheats on your trophy save — PowerPyx reports cheats disable trophies and saving.</p>
+  <ol id="roadmapList" class="roadmap-list"></ol>
+  <h3>Missable trophies</h3>
+  <p id="missableSummary"></p>
+  <h3>100% completion, in short</h3>
+  <p>The checklist (Progress &gt; Stats &gt; 100% Completion, visible only after the story) is about 60% true completion: 200 of 277 vehicles, 100 of 255 animals, 70 of 80 challenges, 15 of 18 card sets and meditations, 300 of 397 stunts. Only robberies, underwater discoveries, shooting ranges, drone races and Bret&rsquo;s quests need everything. Nothing on it is missable. Source: PowerPyx 100% checklist.</p>
+</section>
+
+<section id="checklistView">
+  <div class="controls">
+    <label class="search">Search <input id="search" type="search" placeholder="Trophy name, mission, keyword…" autocomplete="off"></label>
+    <label>Grade <select id="grade"><option value="all">All grades</option><option value="platinum">Platinum</option><option value="gold">Gold</option><option value="silver">Silver</option><option value="bronze">Bronze</option></select></label>
+    <label>Kind <select id="kind"><option value="all">All kinds</option><option value="story">Story</option><option value="missable">Missable</option><option value="collectibles">Collectibles</option><option value="activities">Activities</option><option value="characters">Character quests</option><option value="robbery">Robberies</option><option value="exploration">Exploration</option><option value="misc">Secrets &amp; misc</option><option value="online">Online</option></select></label>
+    <label class="check"><input id="earnedOnly" type="checkbox"> Earned only</label>
+    <label class="check"><input id="spoiler" type="checkbox"> Hide story spoilers</label>
+  </div>
+  <p class="hint" id="onlineNote" hidden>There are no online trophies in GTA VI — the whole list is single-player and offline. (Sources: PowerPyx; Push Square.)</p>
+  <p class="hint">Tick a trophy to mark it earned — it is saved in this browser (localStorage). Click a trophy to open its guide and sources. The spoiler setting hides the names and descriptions of story trophies until you earn them.</p>
+  <div class="actions">
+    <button id="export" type="button">Export progress (.json)</button>
+    <label class="import">Import progress <input id="import" type="file" accept="application/json,.json"></label>
+    <button id="reset" type="button">Reset progress</button>
+  </div>
+  <p class="count" id="count"></p>
+  <main class="layout">
+    <ul id="list" class="trophy-list"></ul>
+    <aside id="detail" class="detail" aria-live="polite">
+      <p class="detail-empty">Select a trophy to read its guide and sources.</p>
+    </aside>
+  </main>
+</section>
+
+<footer>
+  <h2>Sources</h2>
+  <p>Official names, descriptions and grades are as PlayStation publishes them, as listed by Exophase and PSNProfiles and reported by Push Square at launch. Every guide above is written in my own words for this guide; the facts in it come from the sources below, named beside each trophy. Two trophies (Bad Luck, I Guess and Ten Pin) had no confirmed unlock method at launch — this guide says so plainly instead of inventing one.</p>
+  <ul id="sourceList"></ul>
+  <p class="fine">Unofficial fan guide. Not affiliated with Rockstar Games or PlayStation. No Rockstar logo, artwork or game screenshots are used. Works fully offline: it loads only its own files and fetches nothing at run time; source links open only if you follow them.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
