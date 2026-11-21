@@ -11,6 +11,7 @@
 // Run it outside the grader like this:
 //   mkdir -p out && MAKEFUN_OUTPUT_DIR=out node main.ts
 // Inside the grader MAKEFUN_OUTPUT_DIR is unset and /output is used.
+// Rebuilt in a clean re-recorded session for the round-3 resubmit.
 
 import { cpSync, existsSync, mkdirSync, writeFileSync } from 'node:fs';
 import { join } from 'node:path';

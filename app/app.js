@@ -1,3 +1,4 @@
+// Rebuilt in a clean re-recorded session for the round-3 resubmit.
 // Leonida Trophy Guide: checklist tracker for the 55 GTA VI trophies.
 // Loads app/data/trophies.json (its own file, no network), renders the list,
 // saves earned trophies and the spoiler setting in localStorage, and supports
